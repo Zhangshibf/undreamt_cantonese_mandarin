@@ -30,7 +30,7 @@ def main():
     args = parser.parse_args()
 
     # Load model
-    translator = torch.load(args.model)
+    translator = torch.load(args.model,map_location=torch.device('cuda:2'))
 
     # Translate sentences
     end = False
