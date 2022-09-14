@@ -19,7 +19,7 @@ def cpu(x):
 
 
 def gpu(x):
-    return x.cuda(device=3) if x is not None else None
+    return x.cuda(device=6) if x is not None else None
 
 
 default = cpu
