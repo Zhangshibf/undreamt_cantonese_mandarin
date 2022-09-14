@@ -23,7 +23,7 @@ from torch.autograd import Variable
 
 class Translator:
     def __init__(self, encoder_embeddings, decoder_embeddings, generator, src_dictionary, trg_dictionary, encoder,
-                 decoder, denoising=True, device=devices.default):
+                 decoder, denoising=True, device):
         self.encoder_embeddings = encoder_embeddings
         self.decoder_embeddings = decoder_embeddings
         self.generator = generator
